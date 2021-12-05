@@ -17,9 +17,7 @@ function drawSquares(){
         figure.classList.add('square');
         
         figure.onclick = function(){
-            if(dedic == this){
-                this.remove();
-            }
+            if(dedic == this){}
             else{
                 if(dedic != null){
                     dedic.style.borderBottomColor = "";
@@ -29,6 +27,11 @@ function drawSquares(){
                 dedic = this;
             }   
         }
+
+        figure.ondblclick = function(){
+            this.remove();
+        }
+
         document.body.appendChild(figure);
     }
 }
@@ -44,9 +47,7 @@ function drawTriangles(){
         figure.classList.add('triangle');
 
         figure.onclick = function(){
-            if(dedic == this){
-                this.remove();
-            }
+            if(dedic == this){}
             else{
                 if(dedic != null){
                     dedic.style.borderBottomColor = "";
@@ -56,6 +57,11 @@ function drawTriangles(){
                 dedic = this;
             }   
         }
+
+        figure.ondblclick = function(){
+            this.remove();
+        }
+
         document.body.appendChild(figure);
     }
 }
@@ -73,9 +79,7 @@ function drawCircles(){
         figure.classList.add('circle');
         
         figure.onclick = function(){
-            if(dedic == this){
-                this.remove();
-            }
+            if(dedic == this){}
             else{
                 if(dedic != null){
                     dedic.style.borderBottomColor = "";
@@ -85,6 +89,11 @@ function drawCircles(){
                 dedic = this;
             }   
         }
+
+        figure.ondblclick = function(){
+            this.remove();
+        }
+
         document.body.appendChild(figure);
     }
 }
